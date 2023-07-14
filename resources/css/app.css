@@ -1,3 +1,56 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "input.css";
+@import "button.css";
+
+.flex::before,
+.flex::after {
+    display: none !important;
+}
+
+@font-face {
+    font-family: "SF Pro";
+    src: url("../fonts/SF-Pro.ttf");
+}
+
+@font-face {
+    font-family: "SF Pro Display";
+    src: url("../fonts/SF-Pro-Display-Medium.otf");
+}
+
+* {
+    font-family: "SF Pro";
+}
+
+.title {
+    font-family: "SF Pro Display";
+}
+
+/* INPUT */
+.input-error {
+    @apply ring ring-red-500;
+}
+
+.input-primary {
+    @apply rounded-md dark:bg-slate-300 bg-[#212121] py-[13px] w-full focus:border-blue-400;
+}
+
+/* BUTTON */
+.btn-primary {
+    @apply bg-blue-700 hover:bg-blue-800 text-white;
+}
+
+.btn-warning {
+    @apply bg-yellow-500 text-white;
+}
+
+.btn-danger {
+    @apply bg-red-500 text-white;
+}
+
+.btn-light-outline {
+    @apply hover:rounded-full border bg-transparent border-white text-center;
+}
+
+
